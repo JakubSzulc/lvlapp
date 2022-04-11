@@ -17,5 +17,15 @@ namespace lvlapp.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            if (NameString.Text == "admin" && PassString.Text == "admin")
+                await Shell.Current.GoToAsync("//Main");
+            else
+                await DisplayAlert("Ups...", message: "Imię lub hasło jest niepoprawne!", cancel: "Ok");
+
+        }
+
     }
 }

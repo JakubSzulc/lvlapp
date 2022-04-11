@@ -7,8 +7,18 @@
              x:Class="lvlapp.Views.LoginPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
-            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+        <StackLayout Padding="50" VerticalOptions="Start">
+
+            <Image Source="certyfikat.png" WidthRequest="100" Margin="0,100,0,100"></Image>
+
+            <Entry x:Name="NameString" Placeholder="Wprowadź imię"></Entry>
+            <Entry x:Name="PassString" Placeholder="Wprowadź hasło" IsPassword="True"></Entry>
+            <Button VerticalOptions="Center"
+                    Text="Zaloguj" 
+                    Clicked="Button_Clicked"
+                    CornerRadius="50"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

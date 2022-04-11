@@ -29,7 +29,11 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar>
+    <ShellItem Route="Login">
+        <ShellContent Title="Login" Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}"/>
+    </ShellItem>
+    
+    <TabBar Route="Main">
         <ShellContent Title="Szukaj" Icon="lupa.png" ContentTemplate="{DataTemplate local:AboutPage}" />
         <ShellContent Title="Moje Kursy" Icon="course.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
         <ShellContent Title="Konto" Icon="user.png" ContentTemplate="{DataTemplate local:AccountPage}" />
