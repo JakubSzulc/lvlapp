@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lvlapp.Views.RegistrationrPage">
+    <ContentPage.Content>
+        <StackLayout Padding="50" VerticalOptions="Start">
+
+            <Image Source="certyfikat.png" WidthRequest="100" Margin="0,45,0,100"></Image>
+
+            <Entry x:Name="RegNameString" Placeholder="Wprowadź imię"></Entry>
+            <Entry x:Name="RegPassString" Placeholder="Wprowadź hasło" IsPassword="True"></Entry>
+            <Entry x:Name="RegMailString" Placeholder="Wprowadź e-mail"></Entry>
+
+            <Switch x:Name="switch"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+
+            <Label Text="Szukam Kursów"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                             Binding="{Binding Source={x:Reference switch},
+                                               Path=IsToggled}"
+                             Value="True">
+                        <Setter Property="Text" Value="Oferuje Kursy" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+
+            <Button Text="Zarejestruj" Clicked="Button_Registration_Clicked" CornerRadius="50"/>
+            <Label x:Name="LabelError" TextColor="Red"/>
+
+
+
+        </StackLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>
