@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lvlapp.Views.SearchPage"
+             Title="Kursy">
+
+
+
+    <StackLayout Padding="10">
+        <SearchBar Placeholder="Wyszukaj Kurs"
+           SearchButtonPressed="OnSearchBarButtonPressed" />
+        <Label Text="Kategorie:"  FontAttributes="Bold" FontSize="Large" Padding="20,10,0,0" />
+        <StackLayout VerticalOptions="StartAndExpand" Margin="50,10,50,0">
+            <Button Text="Biznes" Clicked="Button_Biznes_Clicked" CornerRadius="50"/>
+            <Button Text="Finanse" Clicked="Button_Finanse_Clicked" CornerRadius="50"/>
+            <Button Text="Gastronomia" Clicked="Button_Gastronomia_Clicked" CornerRadius="50"/>
+            <Button Text="Uroda" Clicked="Button_Uroda_Clicked" CornerRadius="50"/>
+            <Button Text="Budownictwo" Clicked="Button_Budownictwo_Clicked" CornerRadius="50"/>
+            <Button Text="Sztuka" Clicked="Button_Sztuka_Clicked" CornerRadius="50"/>
+            <Button Text="Sport" Clicked="Button_Sport_Clicked" CornerRadius="50"/>
+            <Button Text="Zdrowie" Clicked="Button_Zdrowie_Clicked" CornerRadius="50"/>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

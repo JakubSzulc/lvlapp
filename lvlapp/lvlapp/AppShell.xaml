@@ -34,7 +34,7 @@
     </ShellItem>
 
     <TabBar Route="Main">
-        <ShellContent Title="Szukaj" Icon="lupa.png" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Szukaj" Icon="lupa.png" ContentTemplate="{DataTemplate local:SearchPage}" />
         <ShellContent Title="Moje Kursy" Icon="course.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
         <ShellContent Title="Konto" Icon="user.png" ContentTemplate="{DataTemplate local:AccountPage}" />
     </TabBar>
