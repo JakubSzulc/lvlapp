@@ -7,9 +7,9 @@
              x:Class="lvlapp.Views.LoginPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout Padding="50" VerticalOptions="Center">
+        <StackLayout Padding="50" VerticalOptions="Center" >
 
-            <Image Source="certyfikat.png" WidthRequest="100" Margin="0"></Image>
+            <Image Source="certyfikat.png" WidthRequest="100" Margin="0,-50,0,100"></Image>
 
             <Entry x:Name="NameString" Placeholder="Wprowadź imię"></Entry>
             <Entry x:Name="PassString" Placeholder="Wprowadź hasło" IsPassword="True"></Entry>

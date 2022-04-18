@@ -151,4 +151,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\lupa.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\certyfikat.png" />
+  </ItemGroup>
 </Project>
