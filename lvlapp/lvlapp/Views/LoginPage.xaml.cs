@@ -27,6 +27,7 @@ namespace lvlapp.Views
             else
                 await DisplayAlert("Ups...", message: "Imię lub hasło jest niepoprawne!", cancel: "Ok");
 
+
         }
 
         private async void Register_Clicked(object sender, EventArgs e)

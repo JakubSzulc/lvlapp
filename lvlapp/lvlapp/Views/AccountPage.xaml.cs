@@ -16,5 +16,20 @@ namespace lvlapp.Views
         {
             InitializeComponent();
         }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//LoginPage");
+        }
+
+        private void Button_Twoje_Dane(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Dane_Logowania(object sender, EventArgs e)
+        {
+
+        }
     }
 }

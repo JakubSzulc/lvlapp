@@ -1,12 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="lvlapp.Views.AccountPage">
+             x:Class="lvlapp.Views.AccountPage"
+             Title="Ustawienia Konta">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="user.png" WidthRequest="100" Margin="0,50,0,100"></Image>
+            
+            
+            <Button Margin="65,20,65,20" Text="Dane Logowania"
+                        Clicked="Button_Dane_Logowania"
+                        BackgroundColor="{StaticResource Primary}"
+                        VerticalOptions="Start"
+                        TextColor="White"
+                        CornerRadius="50"/>
+            
+            <Button Margin="65,0,65,20" Text="Dane do Faktury"
+                        Clicked="Button_Twoje_Dane"
+                        BackgroundColor="{StaticResource Primary}"
+                        VerticalOptions="Start"
+                        TextColor="White"
+                        CornerRadius="50"/>
+            
+            <Button Margin="65,20,65,20" Text="Wyloguj"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="Red"
+                        VerticalOptions="EndAndExpand"
+                        TextColor="White"
+                        CornerRadius="50"/>
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
